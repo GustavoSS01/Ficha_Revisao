@@ -20,17 +20,8 @@ public class Viagem_cidades {
 		
 		//Criando menu de selecao de cidade.
 		do {
-			System.out.println("");
-			System.out.println("====Codigo da Cidade====");
-            System.out.println("Cidade A.............1");
-            System.out.println("Cidade B.............2");
-            System.out.println("Cidade C.............3");
-            System.out.println("Cidade D.............4");
-            System.out.println("Cidade E.............5");
-            System.out.println("Cidade F.............6");
-            System.out.println("Cidade G.............7");
-            System.out.println("");
-            
+            menuInterativo(); //menu interativo inserido em metodos
+
             //recebendo cidade de origem.
             System.out.println("Insira o codigo da cidade de origem: ");
             origem = sc.nextInt();
@@ -47,5 +38,19 @@ public class Viagem_cidades {
         //verificando insercao de valores. -> Caso sejam digitados valores menores que 0 e maiores que 8 o processo ira cessar.
 		}while(origem != destino && origem > 0 && origem < 8 && destino > 0 && destino <8);
 		sc.close();
+
+
 	}
+    public static void menuInterativo{
+        System.out.println("");
+        System.out.println("====Codigo da Cidade====");
+        System.out.println("Cidade A.............1");
+        System.out.println("Cidade B.............2");
+        System.out.println("Cidade C.............3");
+        System.out.println("Cidade D.............4");
+        System.out.println("Cidade E.............5");
+        System.out.println("Cidade F.............6");
+        System.out.println("Cidade G.............7");
+        System.out.println("");
+    }
 }
