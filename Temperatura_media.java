@@ -39,7 +39,7 @@ public class Temperatura_media {
 			}
 		}
 		
-		//impress�o dos resultados
+		//impressão dos resultados
 		System.out.printf("Media de temperatura: %.2f graus C \n", media);
 		System.out.println("Numero de temparaturas acima da media: " + contador);
 	}
